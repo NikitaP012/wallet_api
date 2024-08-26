@@ -1,0 +1,101 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #3FA2F6;
+}
+
+
+/* style of the signup page */
+ #myForm{
+    background-color: white;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    top: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    margin: 10px;
+    margin-bottom: 18px;
+    padding: 10px;
+    width: 300px;
+    border: 1.5px solid rgb(191, 180, 180);
+    border-radius: 4px;
+    text-align: center;
+}
+
+
+.signup {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1 {
+    color: black;
+    justify-content: center;
+    align-items: center;
+    margin-left: 130px;
+    font-weight: bolder;
+    text-decoration: underline #3FA2F6 ;
+
+}
+
+button{
+    height: 40px;
+    width: 50%;
+    margin: 10px 100px auto;
+    background-color: #3275b0;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+button:hover{
+    background-color: #073156;
+}
+
+a{
+    color:#3FA2F6;
+}
+
+p{
+    text-align: center;
+}
+/* style of login page */
+
+.login {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#logindetail{
+    background-color: white;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    top: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+

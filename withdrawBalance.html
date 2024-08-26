@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dshboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+  <!-- navbar -->
+  <div class="menu-bar">
+    <nav>
+
+      <div class="wallet">
+        <ul>
+
+          <li><a href="#" style="font-size:25px"><i class="fa fa-bank" style="font-size: 50px; color: darkblue;"></i>
+              Wallet API</a></li>
+        </ul>
+      </div>
+      <div class="logo"></div>
+      <ul>
+
+        <li><a href="#">Name</a></li>
+        <li class="contact">
+          <a href="#">contact</a>
+          <div class="sub-contact">
+            <h4><i class="fa fa-envelope" style="font-size:18px"></i> Mail:walletapi@gmail.com</h4>
+            <h4><i class='fas fa-tty' style='font-size:24px'></i> helpline no : 023345456</h4>
+            <h4><i class="fa fa-linkedin" style="font-size:24px"></i> linkdin: https//linkdin/walletapi</h4>
+          </div>
+        </li>
+
+
+        <!--navbar dropdown -->
+        <li class="user-dropdown">
+          <a href="#">
+            <i class="fas fa-user-circle user-icon" style="font-size: 40px;"></i>
+          </a>
+          <div class="sub-menu">
+            <h2>Nikita Dipak Phapale</h2><br>
+            <h4>phapalenikita80@gmail.com</h4><br>
+            <button>Logout</button><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing eli
+              Totam aliquam sed nostrum vitae sunt adipisci suscipit earum ducimus</p>
+          </div>
+        </li>
+      </ul>
+  </div>
+
+  </nav>
+
+  <!-- sidebar -->
+  <div class="sidebar">
+    <a href="#"> <i class="fa fa-home" style="font-size:30px"></i> Home</a>
+    <a href="dashboard.html"> <i class='fas fa-hand-holding-usd' style='font-size:30px'></i> Add Balance</a>
+    <a href="withdrawBalance.html"> <i class="fa fa-inr" style="font-size:30px"></i> Withdraw Money</a>
+    <a href="transferMoney.html"> <i class='fas fa-money-bill' style='font-size:30px'></i> Transfer Money</a>
+    <a href="transactionHistory.html"> <i class="fas fa-history" style="font-size: 26px;"></i> Transaction History</a>
+    <a href="checkBalance.html"> <i class="fas fa-history" style="font-size: 26px;"></i>Check Balance</a>
+
+  </div>
+
+
+ 
+
+  
+ <div class="withdraw-money">
+      <div class="heading">Withdraw Money</div> <br><br>
+      <div class="field">
+          
+          <div class="input-group"><label for="enter amount">Enter Amount</label><input type="number"
+            placeholder="Enter the Amount"></div> <br>
+            <div class="input-group"><label for="Current amount">Current Balance</label><input type="number"></div><br>
+            <div class="input-group"> <button type="submit">Withdraw Money</button></div>
+        </div>
+    </div>
+    
+  <script src="dashboard.js"></script>
+</body>
+
+</html>
