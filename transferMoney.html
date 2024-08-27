@@ -60,8 +60,8 @@
     <a href="dashboard.html"> <i class='fas fa-hand-holding-usd' style='font-size:30px'></i> Add Balance</a>
     <a href="withdrawBalance.html"> <i class="fa fa-inr" style="font-size:30px"></i> Withdraw Money</a>
     <a href="transferMoney.html"> <i class='fas fa-money-bill' style='font-size:30px'></i> Transfer Money</a>
-    <a href="transactionHistory.html"> <i class="fas fa-history" style="font-size: 26px;"></i> Transaction History</a>
-    <a href="checkBalance.html"> <i class="fas fa-history" style="font-size: 26px;"></i>Check Balance</a>
+    <a href="transactionHistory.html"> <i class="fas fa-history" style="font-size: 26px;"></i> Transaction History<a>
+      <a href="checkBalance.html"> <i class="fas fa-history" style="font-size: 26px;"></i>Check Balance</a>
 
   </div>
 
@@ -71,20 +71,30 @@
     <form id="balance-form">
       <div class="heading">Transfer Money</div> <br><br>
       <div class="field">
-
-        <div class="input-group"><label for="enter amount">Enter Amount</label><input type="number"
-            placeholder="Enter the Amount" id="amount" name="addbalance"></div> <br>
+<!-- enter the mobile number -->
+        <div class="input-group"><label for="enter number">Mobile Number: </label><input type="number"
+            placeholder="Enter the Amount" id="mobile" name="mobile-number"></div> <br>
+            <!-- enter the amount -->
+            <div class="input-group"><label for="enter number">Enter amount: </label><input type="number"
+              placeholder="Enter the Amount" id="amount" name="addbalance"></div> <br>
+              <!-- the current amount  -->
         <div class="current-group"><label for="Current amount">Current Balance</label>
           <h2 id="cu-am">00</h2>
         </div><br>
-        <div class="input-group"> <button type="submit" id="submit">Add Balance</button></div>
+        <!-- reason field -->
+        <div class="input-group"><label for="reason">Reason: </label><input type="text"
+          placeholder="Reason" id="reason" name="reason"></div> <br>
+        <!-- transfer money button -->
+        <div class="input-group"> <button type="submit" id="submit">Transfer Money</button></div>
       </div>
+
+      
     </form>
   </div>
 
   
  
-  <script src="dashboard.js"></script>
+  <script src="transferMoney.js"></script>
 </body>
 
 </html>

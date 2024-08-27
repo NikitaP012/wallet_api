@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
 
         try {
-            console.log("hello");
+        
             
             const amountInput = document.querySelector('#amount');
             const balanceAmount = amountInput.value.trim();
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 alert("You are not logged in. Please log in again.");
                 return;
             }
-            let url = 'http://localhost:8081/addBalance';
+            let url = 'http://localhost:8081/withdrawBalance';
 
             let response = await fetch(url, {
                 method: 'POST',
@@ -41,10 +41,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (response.ok) {
                 let data = await response.json();
-                console.log("data added successfully");
+                console.log("data withdraw successfully");
                 // Optionally update the UI with the new balance
                 document.getElementById('cu-am').textContent = data.TotalBalance; // Assuming the API returns the new balance
-                alert("balance added successfully");
+                alert("balance withdrawn successfully");
                 // window.location.href = "dashboard.html";
             } else if(response.status===500) {
                 let data = await response.json();

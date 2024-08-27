@@ -60,31 +60,34 @@
     <a href="dashboard.html"> <i class='fas fa-hand-holding-usd' style='font-size:30px'></i> Add Balance</a>
     <a href="withdrawBalance.html"> <i class="fa fa-inr" style="font-size:30px"></i> Withdraw Money</a>
     <a href="transferMoney.html"> <i class='fas fa-money-bill' style='font-size:30px'></i> Transfer Money</a>
-    <a href="transactionHistory.html"> <i class="fas fa-history" style="font-size: 26px;"></i> Transaction History</a>
-    <a href="checkBalance.html"> <i class="fas fa-history" style="font-size: 26px;"></i>Check Balance</a>
+    <a href="transactionHistory.html"> <i class="fas fa-history" style="font-size: 26px;"></i> Transaction History<a>
+      <a href="checkBalance.html"> <i class="fas fa-history" style="font-size: 26px;"></i>Check Balance</a>
 
   </div>
 
 
   
   <div class="withdraw-money">
-    <form id="balance-form">
-      <div class="heading">Transaction History</div> <br><br>
-      <div class="field">
+    <table>
 
-        <div class="input-group"><label for="enter amount">Enter Amount</label><input type="number"
-            placeholder="Enter the Amount" id="amount" name="addbalance"></div> <br>
-        <div class="current-group"><label for="Current amount">Current Balance</label>
-          <h2 id="cu-am">00</h2>
-        </div><br>
-        <div class="input-group"> <button type="submit" id="submit">Add Balance</button></div>
-      </div>
-    </form>
+      <tbody id ="history">
+        <!-- <tr >
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>@mdo</td>
+        </tr> -->
+      </tbody>
+
+    </table>
   </div>
 
   
  
-  <script src="dashboard.js"></script>
+  <script src="transHistory.js"></script>
 </body>
 
 </html>
