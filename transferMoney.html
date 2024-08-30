@@ -25,7 +25,7 @@
       <div class="logo"></div>
       <ul>
 
-        <li><a href="#">Name</a></li>
+        <li><a href="profile.html">Profile</a></li>
         <li class="contact">
           <a href="#">contact</a>
           <div class="sub-contact">
@@ -36,15 +36,17 @@
         </li>
 
 
+
         <!--navbar dropdown -->
         <li class="user-dropdown">
-          <a href="#">
+          <a href="#" id="userIcon">
             <i class="fas fa-user-circle user-icon" style="font-size: 40px;"></i>
           </a>
-          <div class="sub-menu">
-            <h2>Nikita Dipak Phapale</h2><br>
-            <h4>phapalenikita80@gmail.com</h4><br>
-            <button>Logout</button><br>
+          <div class="sub-menu" id="dropdownMenu">
+            <h2 id="profile_name">Nikita Dipak Phapale</h2><br>
+            <h4 id="profile_email">phapalenikita80@gmail.com</h4><br>
+            
+            <button id="logout">Logout</button><br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing eli
               Totam aliquam sed nostrum vitae sunt adipisci suscipit earum ducimus</p>
           </div>
@@ -67,25 +69,24 @@
 
 
   
-  <div class="withdraw-money">
+  <div class="transMoney">
     <form id="balance-form">
-      <div class="heading">Transfer Money</div> <br><br>
+      <div class="heading">TRANSFER MONEY</div> <br><br>
       <div class="field">
 <!-- enter the mobile number -->
-        <div class="input-group"><label for="enter number">Mobile Number: </label><input type="number"
-            placeholder="Enter the Amount" id="mobile" name="mobile-number"></div> <br>
+        <div class="input-group"><label for="enter number">Phone: </label><input type="number"
+            placeholder="Enter number" id="mobile" name="mobile-number" maxlength="10"></div> 
             <!-- enter the amount -->
-            <div class="input-group"><label for="enter number">Enter amount: </label><input type="number"
-              placeholder="Enter the Amount" id="amount" name="addbalance"></div> <br>
+            <div class="input-group"><label for="enter number">Amount: </label><input type="number"
+              placeholder="Enter the Amount" id="amount" name="addbalance"></div> 
+              <!-- reason field -->
+              <div class="input-group"><label for="reason">Reason: </label><input type="text"
+                placeholder="Reason" id="reason" name="reason"></div> 
               <!-- the current amount  -->
-        <div class="current-group"><label for="Current amount">Current Balance</label>
-          <h2 id="cu-am">00</h2>
-        </div><br>
-        <!-- reason field -->
-        <div class="input-group"><label for="reason">Reason: </label><input type="text"
-          placeholder="Reason" id="reason" name="reason"></div> <br>
+              <div class="current-group2"><h2>CURRENT BALANCE :</h2> <h2 id="cu-am">00</h2></div><br>
         <!-- transfer money button -->
-        <div class="input-group"> <button type="submit" id="submit">Transfer Money</button></div>
+        <div class="input-group3"> <button type="submit" id="submit">Transfer</button></div>
+        </div>
       </div>
 
       
@@ -94,7 +95,8 @@
 
   
  
-  <script src="transferMoney.js"></script>
+  <script type="module" src="transferMoney.js"></script>
+  <script src="dropdown.js"></script>
 </body>
 
 </html>

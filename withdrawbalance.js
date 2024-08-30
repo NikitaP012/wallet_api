@@ -1,14 +1,24 @@
-document.addEventListener('DOMContentLoaded', function() {
+import { current_value } from './currentbalance.js';
+
+document.addEventListener('DOMContentLoaded', async function() {
+    let Totalbalance=await current_value();
+    document.getElementById('cu-am').textContent = Totalbalance
+    console.log("Totalbalance",Totalbalance);
+    
     const addBalanceForm = document.getElementById('balance-form');
 
     addBalanceForm.addEventListener('submit', async function(e) {
         e.preventDefault();
-
-        try {
         
             
             const amountInput = document.querySelector('#amount');
             const balanceAmount = amountInput.value.trim();
+            if (isNaN(balanceAmount) || balanceAmount <=0) {
+                alert("Invalid Number");
+                return;
+            }
+
+        try {
             console.log("balanceAmount",balanceAmount);
             
 
@@ -49,14 +59,16 @@ document.addEventListener('DOMContentLoaded', function() {
             } else if(response.status===500) {
                 let data = await response.json();
                 console.log("message",data.message);
-                alert("Failed to add balance")
+                alert("Failed to withdraw balance!")
             }
             else if(response.status==400){
                 alert("An error occurred. Please try again.");
-            } 
+            }else if(response.status==502){
+                alert("Insufficient balance");
+            }  
         } catch (error) {
             console.error('Error:', error);
-            alert("An error occurred")
+            alert("An error occurred while Withdraw balance")
         }
     });
 });

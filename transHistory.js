@@ -1,5 +1,8 @@
 
-
+// import { current_value } from './currentbalance.js';
+// let Totalbalance=await current_value();
+// document.getElementById('cu-am').textContent = Totalbalance
+// console.log("Totalbalance",Totalbalance);
 
     async function fetchBalance() {
     try {
@@ -45,21 +48,19 @@
                 <th class='data'>Amount</th>
                 <th class='data'>Reason</th>
                 <th class='data'>Status</th>
-                <th class='data'>CreatedAt</th>
-                <th class='data'>UpdatedAt</th>
+             
             </tr>`
            
-            for(i=0; i<data.length; i++){
+            for(i=0; i<data.Transactions.length; i++){
                  output += ` <tr>
                 <td>${data.Transactions[i].id}</td>
                  <td>${data.Transactions[i].date}</td>
-                  <td>${data.Transactions[i].sender}</td>
-                   <td>${data.Transactions[i].reciever}</td>
+                  <td>${data.Transactions[i].senderMobile}</td>
+                   <td>${data.Transactions[i].receiverMobile}</td>
                     <td>${data.Transactions[i].amount}</td>
                      <td>${data.Transactions[i].reason}</td>
                       <td>${data.Transactions[i].status}</td>
-                       <td>${data.Transactions[i].createdAt}</td>
-                        <td>${data.Transactions[i].updatedAt}</td>    
+                       
                         </tr>`;
                         }
         document.getElementById('history').innerHTML = output;

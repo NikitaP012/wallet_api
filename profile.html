@@ -43,9 +43,9 @@
             <i class="fas fa-user-circle user-icon" style="font-size: 40px;"></i>
           </a>
           <div class="sub-menu" id="dropdownMenu">
-            <h2 id="profile_name">Nikita Dipak Phapale</h2><br>
-            <h4 id="profile_email">phapalenikita80@gmail.com</h4><br>
-            
+            <h2>Nikita Dipak Phapale</h2><br>
+            <h4>phapalenikita80@gmail.com</h4><br>
+            <button></button>
             <button id="logout">Logout</button><br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing eli
               Totam aliquam sed nostrum vitae sunt adipisci suscipit earum ducimus</p>
@@ -67,32 +67,52 @@
 
   </div>
 
-<h2 id="tH">TRANSACTIONS</h2>
-<br>
+  <div class="profile">
+    <h3>Edit Profile</h3>
+    
+     <!-- name -->
+      <div class="edit">
+        <div class="div1">
+          <label for="name">Name:</label><br>
+          <input type="text" name="name" id="n1"> <br><br>
+          <!-- email -->
+          <label for="email">Email:</label><br>
+          <input type="text" name="email"  id="e1"><br><br>
+          <!-- mobile number -->
+          <label for="mobile no.">Mobile no:</label><br>
+          <input type="text" name="mobile-number"  id="m1" maxlength="10"><br><br>
+        </div>
+        
+        <div class="div2">
+        
+          <label for="balance">Balance:</label><br>
+          <input type="number" name="balance"  id="b1" readonly><br><br>
+          <!-- login count -->
+          <label for="login-count">Login Count:</label><br>
+          <input type="number" name="login-count"  id="lc" readonly><br><br>
+          <!-- last login -->
+          <label for="last-login">Last Login:</label><br>
+          <input type="datetime" name="date" id="ll" readonly><br><br>
+          <!-- save changes button -->
+          
+        </div>
+        
+      </div>
+      <!-- balance -->
+      <button id="saveChanges">Save Changes</button>
+      
+
+  </div>
+
+
   
-  <!-- <div class="withdraw-money"> -->
-    <table class="table">
-
-      <tbody id ="history">
-        <!-- <tr >
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-        </tr> -->
-      </tbody>
-
-    </table>
-  <!-- </div> -->
+  
 
   
  
-  <script  src="transHistory.js"></script>
+  <script src="profile.js"></script>
   <script src="dropdown.js"></script>
-  <!-- <script src="dropdown.js"></script> -->
+  
 </body>
 
 </html>

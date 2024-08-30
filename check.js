@@ -25,10 +25,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 currentBalanceInput.value = data.TotalBalance;
                 console.log("current Balance :",data.TotalBalance);
                 
-            } else if (response.status === 401) {
-                alert("Unauthorized access. Please log in.");
-            } else {
-                alert("Failed to fetch balance.");
+            } else if(response.status===500){
+                alert("User does not exist!");
+            }else if(response.status===501){
+                alert("Failed to check balance");
             }
         } catch (error) {
             console.error('Error:', error);

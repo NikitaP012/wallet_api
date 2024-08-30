@@ -25,7 +25,7 @@
       <div class="logo"></div>
       <ul>
 
-        <li><a href="#">Name</a></li>
+        <li><a href="profile.html">Profile</a></li>
         <li class="contact">
           <a href="#">contact</a>
           <div class="sub-contact">
@@ -36,15 +36,16 @@
         </li>
 
 
+
         <!--navbar dropdown -->
         <li class="user-dropdown">
-          <a href="#">
+          <a href="#" id="userIcon">
             <i class="fas fa-user-circle user-icon" style="font-size: 40px;"></i>
           </a>
-          <div class="sub-menu">
-            <h2>Nikita Dipak Phapale</h2><br>
-            <h4>phapalenikita80@gmail.com</h4><br>
-            <button>Logout</button><br>
+          <div class="sub-menu" id="dropdownMenu">
+            <h2 id="profile_name">Nikita Dipak Phapale</h2><br>
+            <h4 id="profile_email">phapalenikita80@gmail.com</h4><br>
+            <button id="logout">Logout</button><br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing eli
               Totam aliquam sed nostrum vitae sunt adipisci suscipit earum ducimus</p>
           </div>
@@ -67,24 +68,24 @@
 
  
 
-  
+  <!-- withdraw balance -->
   <div class="add-balance">
     <form id="balance-form">
-      <div class="heading">Withdraw Balance</div> <br><br>
+      <div class="heading">WITHDRAW BALANCE</div> <br><br>
       <div class="field">
 
         <div class="input-group"><label for="enter amount">Enter Amount</label><input type="number"
             placeholder="Enter the Amount" id="amount" name="balance"></div> <br>
-        <div class="current-group"><label for="Current amount">Current Balance</label>
-          <h2 id="cu-am">00</h2>
+            <div class="input-group"> <button type="submit" id="submit">Withdraw </button></div>
+          </div>
+        </form>
+        <div class="current-group"><h2>CURRENT BALANCE :</h2> <h2 id="cu-am">00</h2>
         </div><br>
-        <div class="input-group"> <button type="submit" id="submit">Withdraw Balance</button></div>
-      </div>
-    </form>
   </div>
 
     
-  <script src="withdrawbalance.js"></script>
+  <script type="module" src="withdrawbalance.js"></script>
+  <script src="dropdown.js"></script>
 </body>
 
 </html>
